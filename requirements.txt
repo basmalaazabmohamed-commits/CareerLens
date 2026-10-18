@@ -1,0 +1,21 @@
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Environment configuration and LLM
+python-dotenv
+google-genai
+
+# Data processing
+numpy
+pandas
+pyarrow
+
+# Retrieval and embeddings
+sentence-transformers
+faiss-cpu
+rank-bm25
+
+# Testing
+pytest
