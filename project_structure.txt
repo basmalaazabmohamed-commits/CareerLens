@@ -1,0 +1,121 @@
+﻿|-- api
+|   |-- routes
+|   |   |-- __init__.py
+|   |   |-- chat.py
+|   |   |-- cv.py
+|   |   \-- jobs.py
+|   |-- __init__.py
+|   |-- main.py
+|   \-- models.py
+|-- candidate_profile
+|   |-- __init__.py
+|   |-- candidate_profile.py
+|   |-- gemini_client.py
+|   |-- job_requirements_extractor.py
+|   |-- pipeline.py
+|   |-- skill_extraction.py
+|   |-- skill_gap.py
+|   \-- skill_normalization.py
+|-- config
+|   |-- __init__.py
+|   \-- settings.py
+|-- data
+|   |-- evaluation
+|   |   |-- evaluation_results.json
+|   |   \-- retrieval_queries.json
+|   |-- processed
+|   |   |-- cvs
+|   |   |   |-- candidate_001.json
+|   |   |   |-- candidate_001.txt
+|   |   |   \-- candidate_001_job_analysis.json
+|   |   |-- gemini_cache
+|   |   |   |-- 07f7b68751c72c44bb549b7d4768266afcb7ef7c5dae26889023c3d17c87cd60.json
+|   |   |   |-- 097bcbbd5a5a30986bc72391815444e99e6a3c5ea7cf052d280c3dd5c89f52ea.json
+|   |   |   |-- 131bb8f1c42a141060e5dc3e619c4aaa69c69e695df9d3ead52403fddc6b91ab.json
+|   |   |   |-- 17c05cfe5faa50288fde3cc4ab60142626f0fd3b87461f7054fe414a8ceb5e8b.json
+|   |   |   |-- 19671bc3dab91871bcc397e139b6e9de8b2201de2eb684558fb0b8e1ead3fea8.json
+|   |   |   |-- 1e23a8f03835a8f5900cf97f188154901c3d062017b5cab1978d4129b591c1e6.json
+|   |   |   |-- 2134e9380b0362fdef8305a07ca4ee18d34a0faaa41846491d41a38cb03c4dd1.json
+|   |   |   |-- 217d10c0367dbb31dd836a513948b207b60066f22794b50ee2a360c1e4072985.json
+|   |   |   |-- 24187a70eca2a3df9ffd1c50b656c17434965c566bf317f13c42e9898b85877f.json
+|   |   |   |-- 31f064989d79df8a1485ee8edf573ef65567318ad0893b738b7e052651b0f5ad.json
+|   |   |   |-- 34ecbae22d9cbaa722d6cd0a994e97852a01d427b5748a06943d43c97abdd1fd.json
+|   |   |   |-- 5d9408909274035812329a148b2d6b4c81a743a705ec15c16f4ebec069767d71.json
+|   |   |   |-- 70f223c291d538deb1edb3ab8efc3a18186c283b8d0edc72428803c3b7292f83.json
+|   |   |   |-- 794577c6c389b7c79cdf2ab468299f81957ce94b44ac3401342e60e2121c9f4d.json
+|   |   |   |-- 88466d407cc0201a665ef234cbedfa1018136d7133552011bd7b6763ba42ad7c.json
+|   |   |   |-- 9504b151877eb1929d160953cd0af7608f69f73e749c15b99957cba1715a1c97.json
+|   |   |   |-- a8b9f8f0db23fe87e3e939c1c9e8307a13b86355ab44d157739e9c4c10774e7c.json
+|   |   |   |-- b4bf11301cec7841d244c928a868cd01bd397e3c3d1d96c33eca1607c565c60f.json
+|   |   |   |-- b538f3d03524d87c54102070037515746ee23a812e11473872cd514884e13650.json
+|   |   |   |-- c54f963151038f66f9e38f865864d1ec042470852d5277e6137f802ac1912fdb.json
+|   |   |   |-- cb0f8dd414570bf76c7d4832195e900aeef5b43ab434a5235d778c0d319054d0.json
+|   |   |   |-- df11d8ad00dfaa06f30dec6a43410937b896f4fa751c8fcc29b7b70aeb3f1637.json
+|   |   |   |-- f65d063462ef61ae6fc528e72e0c88b0a188e544e14594e1446e6f1a64dff2c9.json
+|   |   |   |-- f7865156e6d770fe16c5b6648e8725873a3bbd7a9019ab2e7880f2852604d836.json
+|   |   |   |-- f8e55bc25312a95913fe6c54a3269acb6bfa485b5639657ad623461b1ff29785.json
+|   |   |   \-- fc61b3a172cfcbb76f2455fe001c31e0ec42ecc3fb741ab152b34f1b67bd20fa.json
+|   |   \-- jobs
+|   |       |-- embeddings
+|   |       |   |-- embedding_model.npy
+|   |       |   \-- embedding_model_metadata.parquet
+|   |       |-- vector_store
+|   |       |   \-- jobs.faiss
+|   |       |-- job_chunks.parquet
+|   |       \-- processed_jobs.parquet
+|   \-- raw
+|       |-- cvs
+|       |   \-- candidate_001.pdf
+|       \-- jobs
+|           \-- nextgig_jobs.parquet
+|-- embeddings
+|   |-- __init__.py
+|   \-- embedding_model.py
+|-- evaluation
+|   |-- inspect_eval_jobs.py
+|   |-- retrieval_metrics.py
+|   \-- run_retrieval_evaluation.py
+|-- generation
+|   |-- __init__.py
+|   |-- custom_job_analysis.py
+|   |-- dataset_job_analysis.py
+|   |-- prompts.py
+|   \-- rag_chain.py
+|-- ingestion
+|   |-- __init__.py
+|   |-- cv_cleaning.py
+|   |-- cv_extraction.py
+|   |-- cv_parser.py
+|   |-- job_chunking.py
+|   |-- job_cleaning.py
+|   \-- job_loader.py
+|-- notebooks
+|   \-- 01_dataset_exploration.ipynb
+|-- retrieval
+|   |-- __init__.py
+|   |-- bm25_search.py
+|   |-- hybrid_search.py
+|   |-- job_lookup.py
+|   |-- reranker.py
+|   |-- rrf.py
+|   \-- semantic_search.py
+|-- routing
+|   |-- __init__.py
+|   \-- query_router.py
+|-- tests
+|   |-- test_cleaning.py
+|   |-- test_cv_parser.py
+|   |-- test_cv_pipeline.py
+|   |-- test_embeddings.py
+|   |-- test_retrieval.py
+|   |-- test_skill_gap.py
+|   \-- test_vector_store.py
+|-- vector_store
+|   |-- __init__.py
+|   |-- build_faiss.py
+|   |-- build_index.py
+|   \-- search.py
+|-- download_data.py
+|-- project_structure.txt
+|-- README.md
+\-- requirements.txt
