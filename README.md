@@ -13,7 +13,7 @@ CareerLens is a complete, end-to-end Retrieval-Augmented Generation (RAG) platfo
 Explore the full application demo and walkthrough:
 
 - **Repository:** [https://github.com/basmalaazabmohamed-commits/CareerLens](https://github.com/basmalaazabmohamed-commits/CareerLens)
-- **Demo Video:** [Watch Platform Walkthrough & Demonstration Video](https://github.com/basmalaazabmohamed-commits/CareerLens) *(Add your demo video or Loom/YouTube recording link here)*
+- **Demo Video:** [Watch Platform Walkthrough & Demonstration Video]([https://github.com/basmalaazabmohamed-commits/CareerLens](https://drive.google.com/file/d/13ZD6AGK0WK-53tNBTGMQnI833CLe9P5B/view?usp=sharing)) 
 
 ---
 
