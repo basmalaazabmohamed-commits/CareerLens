@@ -44,3 +44,27 @@ data/raw/
 data/processed/cvs/
 # Ignore all local datasets and generated data
 data/
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Large datasets and generated artifacts
+data/raw/
+data/processed/
+embeddings/
+vector_store/
+
+# Local logs and temporary files
+*.log
